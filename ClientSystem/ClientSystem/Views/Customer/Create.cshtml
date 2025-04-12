@@ -1,0 +1,32 @@
+@model MyMongoWebApp.Models.Customer
+
+<h2>Yeni Müşteri Ekle</h2>
+
+<form method="post" asp-action="Create" onsubmit="return validateEmail()">
+    <div>
+        <label>İsim:</label>
+        <input name="Name" value="@Model?.Name" required />
+    </div>
+    <div>
+        <label>Email:</label>
+        <input id="Email" name="Email" value="@Model?.Email" required />
+        <span id="emailError" class="text-danger" style="display:none;">Email adresi gmail.com ile bitmelidir.</span>
+    </div>
+    <button type="submit">Ekle</button>
+</form>
+
+<script>
+    function validateEmail() {
+        var email = document.getElementById("Email").value;
+        var emailError = document.getElementById("emailError");
+
+        // Gmail kontrolü
+        if (!email.endsWith("gmail.com")) {
+            emailError.style.display = "inline";
+            return false; // Formu göndermeyi engelle
+        } else {
+            emailError.style.display = "none";
+            return true; // Formu göndermeye devam et
+        }
+    }
+</script>

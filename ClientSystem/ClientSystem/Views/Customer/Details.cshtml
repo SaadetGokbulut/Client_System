@@ -1,0 +1,14 @@
+@model MyMongoWebApp.Models.Customer
+
+@{
+    ViewData["Title"] = "Müşteri Detayları";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<div>
+    <h3>Ad: @Model.Name</h3>
+    <p>Email: @Model.Email</p>
+</div>
+
+<a href="@Url.Action("Index")" class="btn btn-secondary">Geri Dön</a>

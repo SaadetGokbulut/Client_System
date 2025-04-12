@@ -1,0 +1,8 @@
+C:\Users\Saadet\Desktop\ClientSystem\obj\Debug\net7.0\ClientSystem.csproj.AssemblyReference.cache
+C:\Users\Saadet\Desktop\ClientSystem\obj\Debug\net7.0\ClientSystem.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Saadet\Desktop\ClientSystem\obj\Debug\net7.0\ClientSystem.AssemblyInfoInputs.cache
+C:\Users\Saadet\Desktop\ClientSystem\obj\Debug\net7.0\ClientSystem.AssemblyInfo.cs
+C:\Users\Saadet\Desktop\ClientSystem\obj\Debug\net7.0\ClientSystem.csproj.CoreCompileInputs.cache
+C:\Users\Saadet\Desktop\ClientSystem\obj\Debug\net7.0\ClientSystem.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Saadet\Desktop\ClientSystem\obj\Debug\net7.0\ClientSystem.RazorAssemblyInfo.cache
+C:\Users\Saadet\Desktop\ClientSystem\obj\Debug\net7.0\ClientSystem.RazorAssemblyInfo.cs

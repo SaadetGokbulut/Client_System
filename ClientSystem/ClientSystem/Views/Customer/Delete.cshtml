@@ -1,0 +1,16 @@
+@model MyMongoWebApp.Models.Customer
+
+<h2>Müşteri Sil</h2>
+
+<p>Bu müşteriyi silmek istediğinize emin misiniz?</p>
+<ul>
+    <li><strong>İsim:</strong> @Model.Name</li>
+    <li><strong>Email:</strong> @Model.Email</li>
+</ul>
+
+<form method="post" asp-action="DeleteConfirmed">
+     @Html.AntiForgeryToken()
+    <input type="hidden" name="id" value="@Model.Id" />
+    <button type="submit" class="btn btn-danger">Sil</button>
+    <a asp-action="Index" class="btn btn-secondary">İptal</a>
+</form>

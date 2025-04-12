@@ -1,0 +1,37 @@
+@model IEnumerable<MyMongoWebApp.Models.Customer>
+
+<h2 class="text-primary mb-4">📋 Müşteri Listesi</h2>
+
+<table class="table table-hover table-bordered shadow-sm rounded bg-white">
+    <thead class="table-dark">
+        <tr>
+            <th scope="col">👤 İsim</th>
+            <th scope="col">📧 Email</th>
+            <th scope="col">⚙️ İşlem</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var customer in Model)
+        {
+            <tr>
+                <td class="align-middle">@customer.Name</td>
+                <td class="align-middle">@customer.Email</td>
+                <td class="align-middle">
+                    <a href="@Url.Action("Edit", new { id = customer.Id })" class="btn btn-sm btn-warning me-1">
+                        <i class="fas fa-edit"></i> Düzenle
+                    </a>
+                    <a href="@Url.Action("Delete", new { id = customer.Id })" class="btn btn-sm btn-danger"
+                       onclick="return confirm('Silmek istediğinize emin misiniz?');">
+                        <i class="fas fa-trash"></i> Sil
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<p>
+    <a href="@Url.Action("Create")" class="btn btn-success">
+        <i class="fas fa-plus"></i> Yeni Müşteri Ekle
+    </a>
+</p>
